@@ -87,3 +87,20 @@ body{
 .banner-desc{
     margin-bottom: 2rem;
 }
+.banner-image{
+    width: 100%;
+}
+
+
+
+
+
+
+
+/* Responsive Media Query */
+
+@media screen and (max-width:576px){
+    .navbar, .nav-link{
+        flex-direction: column;
+    }
+}
