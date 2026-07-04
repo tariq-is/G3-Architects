@@ -46,6 +46,9 @@ body{
 .dark-3{
     color: #727272;
 }
+.org-color{
+    color: #FF900E;
+}
 
 
 
@@ -75,6 +78,9 @@ body{
 
 /* Banner CSS */
 
+.banner{
+    padding-bottom: 80px;
+}
 .banner-content{
     width: 785px;
     margin: 0 auto 3.125rem;
@@ -91,6 +97,19 @@ body{
     width: 100%;
 }
 
+/* Teams CSS */
+
+.teams{
+    margin-top: 70px;
+    align-items: center;
+    gap: 50px;
+}
+.team-img-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
 
 
 
@@ -103,6 +122,44 @@ body{
     .navbar, .nav-link{
         flex-direction: column;
     }
+    .brand{
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 1.8rem;
+    }
+    .nav-links{
+        padding: 0;
+    }
+    .nav-link{
+        font-size: .8rem;
+        text-align: center;
+    }
 }
 
-@media screen and (max-width:767px)
+@media screen and (max-width:767px){
+    .navbar, .nav-link{
+        flex-direction: column;
+    }
+    .brand{
+        font-size: 1.6rem;
+        margin-bottom: 0;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 1.8rem;
+    }
+    .nav-links{
+        padding: 0;
+    }
+    .nav-link{
+        font-size: .8rem;
+        text-align: center;
+    }
+}
