@@ -49,6 +49,14 @@ body{
 .org-color{
     color: #FF900E;
 }
+main > section{
+    margin-top: 120px;
+}
+.section-title{
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 0;
+}
 
 
 
@@ -82,7 +90,7 @@ body{
     padding-bottom: 80px;
 }
 .banner-content{
-    width: 785px;
+    max-width: 785px;
     margin: 0 auto 3.125rem;
 }
 .banner-title{
@@ -100,16 +108,55 @@ body{
 /* Teams CSS */
 
 .teams{
-    margin-top: 70px;
     align-items: center;
-    gap: 50px;
 }
 .team-img-container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 24px;
 }
+.team-features{
+    margin-left: 130px;
+    max-width: 530px;
+}
+#quick{
+    font-weight: 500;
+}
+.team-feature-desc{
+    margin-bottom: 20px;
+}
 
+/* Some Fact CSS */
+
+.some-fact-container{
+    max-width: 540px;
+}
+.facts-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 60px auto 0;
+}
+.fact-card{
+    border: 1px solid #FF900E;
+    width: 200px;
+    height: 200px;
+    border-radius: 8px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.fact-number{
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin: 10px 0 0;
+    color: #424242;
+}
+.fact-name{
+    margin: 10px 0 0;
+    color: #727272;
+    font-size: 1rem;
+    font-weight: 600;
+}
 
 
 
@@ -119,47 +166,32 @@ body{
 /* Responsive Media Query */
 
 @media screen and (max-width:576px){
-    .navbar, .nav-link{
+    .navbar, 
+    .nav-link,
+    .teams{
         flex-direction: column;
-    }
-    .brand{
-        font-size: 1.6rem;
-        margin-bottom: 0;
-    }
-    .banner-content{
-        width: 100%;
-    }
-    .banner-title{
-        font-size: 1.8rem;
     }
     .nav-links{
         padding: 0;
     }
-    .nav-link{
-        font-size: .8rem;
-        text-align: center;
-    }
-}
 
-@media screen and (max-width:767px){
-    .navbar, .nav-link{
+    /* Team */
+
+    .team-img-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .team-features{
+        margin-left: 20px;
+    }
+    
+} 
+
+@media screen and (min-width:577px) and (max-width:992px) {
+    .teams{
         flex-direction: column;
     }
-    .brand{
-        font-size: 1.6rem;
-        margin-bottom: 0;
+    .team-features{
+        margin-left: 50px;
     }
-    .banner-content{
-        width: 100%;
-    }
-    .banner-title{
-        font-size: 1.8rem;
-    }
-    .nav-links{
-        padding: 0;
-    }
-    .nav-link{
-        font-size: .8rem;
-        text-align: center;
-    }
+    
 }
