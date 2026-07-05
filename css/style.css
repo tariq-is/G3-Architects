@@ -158,6 +158,16 @@ main > section{
     font-weight: 600;
 }
 
+/* Sponsor CSS */
+
+.sponsors-info{
+    max-width: 540px;
+    margin: 0 auto;
+}
+.sponsor-desc{
+    margin-top: 30px;
+}
+
 
 
 
@@ -182,6 +192,14 @@ main > section{
     }
     .team-features{
         margin-left: 20px;
+    }
+
+    /* Some facts */
+
+    .facts-container{
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 24px;
     }
     
 } 
