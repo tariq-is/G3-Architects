@@ -149,6 +149,17 @@ main > section{
     font-size: 1.25rem;
     font-weight: 600;
 }
+#experience-badge{
+    padding: 45px 42px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-top: -100px;
+    margin-left: -100px;
+}
+#experience-year{
+    font-size: 4rem;
+    font-weight: 700;
+}
 
 /* Some Fact CSS */
 
@@ -210,7 +221,8 @@ main > section{
 @media screen and (max-width:576px){
     .navbar, 
     .nav-link,
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .nav-links{
@@ -239,11 +251,22 @@ main > section{
         gap: 50px;
         grid-template-columns: repeat(1, 1fr);
     }
+
+    /* Features */
+
+    .feature-image img{
+        width: 100%;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
+    }
     
 } 
 
 @media screen and (min-width:577px) and (max-width:992px) {
-    .teams{
+    .teams,
+    .features{
         flex-direction: column;
     }
     .team-features{
@@ -253,6 +276,10 @@ main > section{
     .sponsor-companies{
         grid-template-columns: repeat(2, 1fr);
         gap: 50px;
+    }
+    #experience-badge{
+        margin-top: 20px;
+        margin-left: 20px;
     }
     
 }
