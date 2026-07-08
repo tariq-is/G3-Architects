@@ -126,6 +126,30 @@ main > section{
     margin-bottom: 20px;
 }
 
+/* Features CSS */
+
+.features{
+    gap: 140px;
+}
+#feature-section-title{
+    border-left: 5px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card-container{
+    margin-top: 50px;
+}
+.feature-card{
+    margin-bottom: 20px;
+    padding: 30px 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0 ,0.06);
+}
+.feature-title{
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
 /* Some Fact CSS */
 
 .some-fact-container{
@@ -135,6 +159,7 @@ main > section{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     margin: 60px auto 0;
+    justify-items: center;
 }
 .fact-card{
     border: 1px solid #FF900E;
@@ -205,7 +230,6 @@ main > section{
 
     .facts-container{
         grid-template-columns: 1fr;
-        justify-items: center;
         gap: 24px;
     }
     
